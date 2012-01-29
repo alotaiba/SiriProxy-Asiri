@@ -6,7 +6,7 @@ Before you install Asiri, make sure you have the following installed:
 
 1. speer ([installation page](https://github.com/alotaiba/speer))
 1. ffmpeg ([installation page](http://ffmpeg.org/))
-1. SiriProxy duh! [(installation page)](https://github.com/plamoni/SiriProxy)
+1. SiriProxy duh! ([installation page](https://github.com/plamoni/SiriProxy))
 1. Copy the contents of `config-info.yml` into your `~/.siriproxy/config.yml`
 1. Make your modification to the language
 1. Issue `rvmsudo siriproxy update` inside your SiriProxy directory
