@@ -4,13 +4,17 @@ Let Siri speak your language with Asiri, the SiriProxy plugin that adds multi la
 ## Installation
 Before you install Asiri, make sure you have the following installed:
 
-1. speer [(installation page)](https://github.com/alotaiba/speer)
-1. ffmpeg [(installation page)](http://ffmpeg.org/)
+1. speer ([installation page](https://github.com/alotaiba/speer))
+1. ffmpeg ([installation page](http://ffmpeg.org/))
 1. SiriProxy duh! [(installation page)](https://github.com/plamoni/SiriProxy)
 1. Copy the contents of `config-info.yml` into your `~/.siriproxy/config.yml`
 1. Make your modification to the language
-1. rvmsudo siriproxy update
+1. Issue `rvmsudo siriproxy update` inside your SiriProxy directory
 1. Restart SiriProxy
+
+Note: On Ubuntu, you may face some issues during the installation, as there are some dependencies required by curb, which can be installed by the following command:
+
+    sudo apt-get install libcurl4-openssl-dev
 
 ## License
 Asiri is a project of Abdulrahman Al-Otaiba, the project is dual-licensed under GNU GPLv3, and MIT. See [LICENSE](https://github.com/alotaiba/SiriProxy-Asiri/blob/master/LICENSE) for more details.
