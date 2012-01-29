@@ -13,16 +13,11 @@ module SiriproxyAsiri
     def filter(object, opts={})
       #We don't need the direction, since these packets come from either Guzzoni or iPhone (one way)
       case object["class"]
-      when "StartSpeechRequest"
-        self.tmp_path = File.join(File.dirname(__FILE__), '..', '..', 'tmp', UUIDTools::UUID.random_create.to_s.upcase)
-      when "FinishSpeech"
-        self.recognized_speech = parse_speech(opts)
-      when "SpeechFailure"
-        cleanup #Need to clean up in CancelRequest as well
-      when "SpeechPacket"
-        record_binary(object)
-      when "SpeechRecognized"
-        inject_speech()
+      when "StartSpeechRequest"   then self.tmp_path = File.join(File.dirname(__FILE__), '..', '..', 'tmp', UUIDTools::UUID.random_create.to_s.upcase)
+      when "FinishSpeech"         then self.recognized_speech = parse_speech(opts)
+      when "SpeechFailure"        then cleanup #We may need to clean up in CancelRequest as well?
+      when "SpeechPacket"         then record_binary(object)
+      when "SpeechRecognized"     then inject_speech()
       end
     end
     

@@ -9,6 +9,8 @@ Before you install Asiri, make sure you have the following installed:
 1. SiriProxy duh! ([installation page](https://github.com/plamoni/SiriProxy))
 1. Copy the contents of `config-info.yml` into your `~/.siriproxy/config.yml`
 1. Make your modification to the language
+1. Copy the folder `languages` into your `~/.siriproxy` folder, so the result will be `~/.siriproxy/languages`
+1. Add as many languages as you want inside the folder, with your implementation of each language. Remember, only one language can be loaded at one time. If you need to change the language, you need to restart SiriProxy
 1. Issue `rvmsudo siriproxy update` inside your SiriProxy directory
 1. Restart SiriProxy
 
