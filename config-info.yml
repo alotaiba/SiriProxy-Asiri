@@ -1,0 +1,9 @@
+#Example configuration options that can be placed in your main SiriProxy config.yml
+
+##########################
+#NOTICE: Modifying these options in this file has no effect. You must put them in SiriProxy's config.yml!
+##########################
+    
+    - name: 'Asiri'
+      git: 'git://github.com/alotaiba/SiriProxy-Asiri.git'
+      language: 'ar-QA' #change this option to the language that Siri should speak
