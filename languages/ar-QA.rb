@@ -28,10 +28,14 @@ class SiriProxy::Plugin::Asiri < SiriProxy::Plugin
     request_completed
   end
 
-  listen_for /هل سيربح/ do
+  listen_for /هل سيربح برشلونة/ do
     say "يمقن يربح ويمقن لا", spoken: "Yamken Yerbah Wa Yamken La!"
   
     request_completed
   end
   
+  listen_for /من هو الافظل في اللعب برشلونة او ريال مدريد/ do
+    say "يمقن يربح ويمقن لا", spoken: "Yamken Yerbah Wa Yamken La!"
+  
+    
 end
